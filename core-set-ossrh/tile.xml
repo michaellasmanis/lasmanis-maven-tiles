@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright © 2020 Michael Lasmanis (michael@lasmanis.com)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<!--
+    This tile expects the following properties to be set:
+        project.name
+        project.inceptionYear
+        repository.name
+        gpg.keyname
+
+    Add the following line into your pom:
+        <url>${baseurl}</url>
+        <scm>
+            <connection>${scmBase.connection}</connection>
+            <url>${scmBase.url}</url>
+            <developerConnection>${scmBase.developerConnection}</developerConnection>
+            <tag>${scmBase.tag}</tag>
+        </scm>
+        <distributionManagement>
+            <site>
+               <id>scm-publish</id>
+               <url>${scmBase.connection}</url>
+           </site>
+        </distributionManagement>
+-->
+<project>
+    <tiles>
+        <tile>@project.groupId@:core-set-nodistribution:@project.version@</tile>
+        <tile>@project.groupId@:distribution-management-ossrh:@project.version@</tile>
+        <tile>@project.groupId@:nexus-staging-maven:@project.version@</tile>
+    </tiles>
+</project>
