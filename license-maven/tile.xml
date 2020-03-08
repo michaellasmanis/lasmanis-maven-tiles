@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright © 2020 Michael Lasmanis (michael@lasmanis.com)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<!--
+    This tile expects the following properties to be set:
+        project.name
+        project.inceptionYear
+-->
+<project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.mycila</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>@license-maven.version@</version>
+                <configuration>
+                    <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
+                    <properties>
+                        <owner>Michael Lasmanis</owner>
+                        <email>michael@lasmanis.com</email>
+                    </properties>
+                    <excludes>
+                        <exclude>LICENSE</exclude>
+                        <exclude>nb-licenseheader.txt</exclude>
+                        <exclude>README.markdown</exclude>
+                        <exclude>src/site/markdown/*</exclude>
+                        <exclude>.vagrant/**</exclude>
+                        <exclude>.flattened-pom.xml</exclude>
+                    </excludes>
+                    <mapping>
+                        <markdown>DOUBLESLASH_STYLE</markdown>
+                        <NOTICE>TEXT</NOTICE>
+                        <copyright>TEXT</copyright>
+                        <bsh>JAVADOC_STYLE</bsh>
+                        <Vagrantfile>SCRIPT_STYLE</Vagrantfile>
+                    </mapping>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <dependencies>
+                  <dependency>
+                    <groupId>com.mycila</groupId>
+                    <artifactId>license-maven-plugin-git</artifactId>
+                    <version>@license-maven.version@</version>
+                  </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+</project>
