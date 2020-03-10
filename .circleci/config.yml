@@ -69,11 +69,11 @@ jobs:
       - run:
           name: Setting up git
           command: |
-            git config user.email "${GPG_EMAIL}"
-            git config user.name "${GPG_NAME}"
-            git config user.signingkey "${GPG_KEYID}"
-            git config commit.gpgsign 'true'
-            git config tag.forceSignAnnotated 'true'
+            git config --global user.email "${GPG_EMAIL}"
+            git config --global user.name "${GPG_NAME}"
+            git config --global user.signingkey "${GPG_KEYID}"
+            git config --global commit.gpgsign 'true'
+            git config --global tag.forceSignAnnotated 'true'
 
       # Download and cache dependencies
       - restore_cache:
