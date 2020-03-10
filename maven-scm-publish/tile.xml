@@ -25,7 +25,7 @@
                 <version>@maven-scm-publish.version@</version>
                 <configuration>
                     <checkoutDirectory>${project.build.directory}/scmpublish</checkoutDirectory>
-                    <checkinComment>Publishing Site Docs for ${project.artifactId}:${project.version}
+                    <checkinComment>Publishing Site Docs for ${project.artifactId}:${project.version}@scmBase.ciIgnoreSuffix@
                     </checkinComment>
                     <content>${project.build.directory}/staging</content>
                     <skipDeletedFiles>true</skipDeletedFiles>
