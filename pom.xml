@@ -79,6 +79,7 @@
         <scmBase.developerConnection>scm:${baseurl}.git</scmBase.developerConnection>
         <scmBase.tag>HEAD</scmBase.tag>
         <scmBase.sitePublishBranch>gh-pages</scmBase.sitePublishBranch>
+        <scmBase.ciIgnoreSuffix> [skip ci]</scmBase.ciIgnoreSuffix>
 
         <!-- supress dependency locations for project-info-reports -->
         <dependency.locations.enabled>false</dependency.locations.enabled>
@@ -292,7 +293,7 @@
                     <version>${maven-scm-publish.version}</version>
                     <configuration>
                         <checkoutDirectory>${project.build.directory}/scmpublish</checkoutDirectory>
-                        <checkinComment>Publishing Site Docs for ${project.artifactId}:${project.version}
+                        <checkinComment>Publishing Site Docs for ${project.artifactId}:${project.version}${scmBase.ciIgnoreSuffix}
                         </checkinComment>
                         <content>${project.build.directory}/staging</content>
                         <skipDeletedFiles>true</skipDeletedFiles>
