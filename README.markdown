@@ -1,5 +1,9 @@
 # Maven Tiles
 
+| Branch | Status |
+| ------ | ------ |
+|Master|[![Build Status](https://img.shields.io/circleci/project/github/michaellasmanis/lasmanis-maven-tiles/master.svg?style=flat)](https://circleci.com/gh/michaellasmanis/lasmanis-maven-tiles/tree/master) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.lasmanis.maven.tiles/core-set-ossrh/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/com.lasmanis.maven.tiles/core-set-ossrh)|
+
 This project sets up the basic maven infrastructure for projects.
 
 It configures the following basic items for your maven projects:
@@ -51,7 +55,7 @@ Below is the basic usage pattern for inclusion in a pom:
     <artifactId>myartifact</artifactId>
     <version>${revision}.${changelist}</version>
     <name>My Project Name</name>
-    <inceptionYear>2018</inceptionYear>
+    <inceptionYear>2020</inceptionYear>
     <properties>
         <revision>0.1</revision>
         <changelist>0-SNAPSHOT</changelist>
@@ -66,6 +70,12 @@ Below is the basic usage pattern for inclusion in a pom:
         <developerConnection>${scm.developerConnection}</developerConnection>
         <tag>${scm.tag}</tag>
     </scm>
+    <distributionManagement>
+        <site>
+           <id>scm-publish</id>
+           <url>${scmBase.connection}</url>
+       </site>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>
