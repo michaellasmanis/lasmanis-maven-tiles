@@ -85,14 +85,14 @@
         <dependency.locations.enabled>false</dependency.locations.enabled>
 
         <!-- plugins/extensions -->
-        <doxia-module-markdown.version>1.9</doxia-module-markdown.version>
-        <flatten-maven.version>1.2.1</flatten-maven.version>
+        <doxia-module-markdown.version>1.9.1</doxia-module-markdown.version>
+        <flatten-maven.version>1.2.2</flatten-maven.version>
         <license-maven.version>3.0</license-maven.version>
-        <maven-antrun.version>1.8</maven-antrun.version>
-        <maven-assembly.version>3.2.0</maven-assembly.version>
+        <maven-antrun.version>3.0.0</maven-antrun.version>
+        <maven-assembly.version>3.3.0</maven-assembly.version>
         <maven-changes.version>2.12.1</maven-changes.version>
         <maven-clean.version>3.1.0</maven-clean.version>
-        <maven-dependency.version>3.1.1</maven-dependency.version>
+        <maven-dependency.version>3.1.2</maven-dependency.version>
         <maven-deploy.version>3.0.0-M1</maven-deploy.version>
         <maven-enforcer.version>3.0.0-M3</maven-enforcer.version>
         <maven-gpg.version>1.6</maven-gpg.version>
@@ -102,10 +102,10 @@
         <maven-resources.version>3.1.0</maven-resources.version>
         <maven-scm.version>1.11.2</maven-scm.version>
         <maven-scm-publish.version>3.0.0</maven-scm-publish.version>
-        <maven-site.version>3.8.2</maven-site.version>
+        <maven-site.version>3.9.0</maven-site.version>
         <nexus-staging-maven.version>1.6.8</nexus-staging-maven.version>
         <ossindex-maven-enforcer-rules.version>3.1.0</ossindex-maven-enforcer-rules.version>
-        <tiles-maven.version>2.16</tiles-maven.version>
+        <tiles-maven.version>2.17</tiles-maven.version>
         <versions-maven.version>2.7</versions-maven.version>
     </properties>
 
