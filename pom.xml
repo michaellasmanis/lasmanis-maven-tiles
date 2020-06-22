@@ -63,6 +63,8 @@
 
         <java.reqversion>[1.8,1.9)</java.reqversion>
         <maven.reqversion>[3.5,)</maven.reqversion>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
 
         <!-- project base url -->
         <baseurl>https://github.com/${repository.owner}/${repository.name}</baseurl>
@@ -85,26 +87,41 @@
         <dependency.locations.enabled>false</dependency.locations.enabled>
 
         <!-- plugins/extensions -->
+        <clirr-maven.version>2.8</clirr-maven.version>
         <doxia-module-markdown.version>1.9.1</doxia-module-markdown.version>
+        <exec-maven.version>3.0.0</exec-maven.version>
         <flatten-maven.version>1.2.2</flatten-maven.version>
+        <jacoco-maven.version>0.8.5</jacoco-maven.version>
         <license-maven.version>3.0</license-maven.version>
         <maven-antrun.version>3.0.0</maven-antrun.version>
         <maven-assembly.version>3.3.0</maven-assembly.version>
         <maven-changes.version>2.12.1</maven-changes.version>
+        <maven-checkstyle.version>3.1.1</maven-checkstyle.version>
         <maven-clean.version>3.1.0</maven-clean.version>
+        <maven-compiler.version>3.8.1</maven-compiler.version>
         <maven-dependency.version>3.1.2</maven-dependency.version>
         <maven-deploy.version>3.0.0-M1</maven-deploy.version>
         <maven-enforcer.version>3.0.0-M3</maven-enforcer.version>
         <maven-gpg.version>1.6</maven-gpg.version>
         <maven-install.version>3.0.0-M1</maven-install.version>
+        <maven-jar.version>3.2.0</maven-jar.version>
+        <maven-javadoc.version>3.2.0</maven-javadoc.version>
+        <maven-jxr.version>3.0.0</maven-jxr.version>
+        <maven-pmd.version>3.13.0</maven-pmd.version>
         <maven-project-info-reports.version>3.0.0</maven-project-info-reports.version>
         <maven-release.version>3.0.0-M1</maven-release.version>
         <maven-resources.version>3.1.0</maven-resources.version>
         <maven-scm.version>1.11.2</maven-scm.version>
         <maven-scm-publish.version>3.0.0</maven-scm-publish.version>
+        <maven-shade.version>3.2.4</maven-shade.version>
         <maven-site.version>3.9.0</maven-site.version>
+        <maven-source.version>3.2.1</maven-source.version>
+        <maven-surefire.version>3.0.0-M5</maven-surefire.version>
+        <mpl-checkstyle.version>0.0.10</mpl-checkstyle.version>
         <nexus-staging-maven.version>1.6.8</nexus-staging-maven.version>
         <ossindex-maven-enforcer-rules.version>3.1.0</ossindex-maven-enforcer-rules.version>
+        <swagger-maven.version>2.1.2</swagger-maven.version>
+        <templating-maven.version>1.0.0</templating-maven.version>
         <tiles-maven.version>2.17</tiles-maven.version>
         <versions-maven.version>2.7</versions-maven.version>
     </properties>
@@ -502,32 +519,48 @@
     </profiles>
 
     <modules>
+        <module>clirr-maven</module>
         <module>core-set-nodistribution</module>
         <module>core-set-ossrh</module>
         <module>developers</module>
         <module>distribution-management-ossrh</module>
         <module>encoding</module>
+        <module>exec-maven</module>
         <module>flatten-maven-ossrh</module>
         <module>issuemanagement-github</module>
+        <module>jacoco-maven</module>
+        <module>java-set</module>
         <module>license-maven</module>
         <module>maven-antrun</module>
         <module>maven-assembly</module>
         <module>maven-changes</module>
+        <module>maven-checkstyle</module>
         <module>maven-clean</module>
+        <module>maven-compiler</module>
         <module>maven-dependency</module>
         <module>maven-deploy-skip</module>
         <module>maven-enforcer</module>
         <module>maven-gpg</module>
         <module>maven-install</module>
+        <module>maven-jar</module>
+        <module>maven-javadoc</module>
+        <module>maven-jxr</module>
+        <module>maven-pmd</module>
         <module>maven-project-info-reports</module>
         <module>maven-release</module>
         <module>maven-resources</module>
         <module>maven-scm</module>
         <module>maven-scm-publish</module>
+        <module>maven-shade</module>
         <module>maven-site</module>
+        <module>maven-source</module>
+        <module>maven-surefire</module>
         <module>nexus-staging-maven</module>
         <module>organization</module>
         <module>scm-github</module>
+        <module>swagger-maven</module>
+        <module>target-jdk</module>
+        <module>templating-maven</module>
         <module>url-github</module>
         <module>versions-maven</module>
     </modules>
