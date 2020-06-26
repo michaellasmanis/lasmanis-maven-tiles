@@ -20,25 +20,50 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
+                <groupId>com.carrotgarden.maven</groupId>
                 <artifactId>flatten-maven-plugin</artifactId>
                 <version>@flatten-maven.version@</version>
                 <configuration>
-                    <flattenMode>ossrh</flattenMode>
+                    <!-- Control dependency resolution. -->
+                    <performDependencyResolve>true</performDependencyResolve>
+                    <includeScope>runtime</includeScope>
+                    <excludeTransitive>false</excludeTransitive>
+                    <resolveExclusions>true</resolveExclusions>
+
+                    <!-- scope erasure -->
+                    <performEraseScopes>true</performEraseScopes>
+                    <scopeEraseList>test</scopeEraseList>
+
+                    <!-- Remove these pom.xml members. -->
+                    <performRemoveMembers>true</performRemoveMembers>
+                    <memberRemoveList>
+                        <member>parent</member>
+                        <member>properties</member>
+                        <member>distributionManagement</member>
+                        <member>dependencyManagement</member>
+                        <member>repositories</member>
+                        <member>pluginRepositories</member>
+                        <member>build</member>
+                        <member>profiles</member>
+                        <member>reporting</member>
+                        <member>modules</member>
+                        <member>issueManagement</member>
+                        <member>inceptionYear</member>
+                    </memberRemoveList>
+
+                    <!-- override identity -->
+                    <performOverrideIdentity>false</performOverrideIdentity>
+
+                    <!-- Switch project from pom.xml to pom.xml.flatten. -->
+                    <performSwitchPomXml>true</performSwitchPomXml>
+                    <packagingSwitchList>
+                        <packaging>jar,war,ear,bundle,maven-plugin,tile</packaging>
+                    </packagingSwitchList>
                 </configuration>
                 <executions>
                     <execution>
-                        <id>flatten</id>
-                        <phase>process-resources</phase>
                         <goals>
                             <goal>flatten</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>flatten.clean</id>
-                        <phase>clean</phase>
-                        <goals>
-                            <goal>clean</goal>
                         </goals>
                     </execution>
                 </executions>
