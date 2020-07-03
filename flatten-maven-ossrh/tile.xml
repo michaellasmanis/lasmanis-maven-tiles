@@ -57,7 +57,13 @@
                     <!-- Switch project from pom.xml to pom.xml.flatten. -->
                     <performSwitchPomXml>true</performSwitchPomXml>
                     <packagingSwitchList>
-                        <packaging>jar,war,ear,bundle,maven-plugin,tile</packaging>
+                        <packaging>pom</packaging>
+                        <packaging>tile</packaging>
+                        <packaging>jar</packaging>
+                        <packaging>war</packaging>
+                        <packaging>ear</packaging>
+                        <packaging>bundle</packaging>
+                        <packaging>maven-plugin</packaging>
                     </packagingSwitchList>
                 </configuration>
                 <executions>
