@@ -562,6 +562,7 @@
         <module>jacoco-maven</module>
         <module>java-set</module>
         <module>license-maven</module>
+        <module>licenses-apache2</module>
         <module>maven-antrun</module>
         <module>maven-assembly</module>
         <module>maven-changes</module>
