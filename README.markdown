@@ -17,6 +17,7 @@ It configures the following basic items for your maven projects:
     * developers
     * distributionManagement
     * issueManagement
+    * license
     * organization
     * scm urls
     * url
@@ -85,19 +86,11 @@ Below is the basic usage pattern for inclusion in a pom:
     <description>My Project Description</description>
     <inceptionYear>2020</inceptionYear>
 
-    <licenses>
-        <license>
-            <name>The Apache Software License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
-
     <properties>
         <revision>0.1</revision>
         <changelist>0-SNAPSHOT</changelist>
         <repository.name>myproject</repository.name>
-        <tiles-maven.version>2.17</tiles-maven.version>
+        <tiles-maven.version>2.19</tiles-maven.version>
         <lasmanis-maven-tiles.version>0.0.0</lasmanis-maven-tiles.version>
     </properties>
 
@@ -135,6 +128,6 @@ Below is the basic usage pattern for inclusion in a pom:
     </build>
 </project>
 ```
-At a minimum, you should update project.artifactId, project.name, repository.name and asmanis-maven-tiles.version.
+At a minimum, you should update project.artifactId, project.name, repository.name and lasmanis-maven-tiles.version.
 
 gpg.keyname is typically set via a maven settings.xml file or the maven command line (-Dgpg.keyname=GPG_KEY_EMAIL).

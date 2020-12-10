@@ -42,6 +42,7 @@
     <tiles>
         <tile>@project.groupId@:core-set-nodistribution:@project.version@</tile>
         <tile>@project.groupId@:distribution-management-ossrh:@project.version@</tile>
+        <tile>@project.groupId@:licenses-apache2:@project.version@</tile>
         <tile>@project.groupId@:nexus-staging-maven:@project.version@</tile>
     </tiles>
 </project>
