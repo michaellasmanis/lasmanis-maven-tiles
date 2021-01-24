@@ -20,6 +20,7 @@
     This tile expects the following properties to be set:
         resolve.resourcePackages
         resolve.resourceClasses
+        project.build.directory
 -->
 <project>
     <properties>

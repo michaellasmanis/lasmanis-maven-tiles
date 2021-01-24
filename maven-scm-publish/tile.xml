@@ -16,6 +16,12 @@
     limitations under the License.
 
 -->
+<!--
+    This tile expects the following properties to be set:
+        project.artifactId
+        project.version
+        project.build.directory
+-->
 <project>
     <build>
         <plugins>
