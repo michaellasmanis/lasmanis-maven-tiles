@@ -16,7 +16,14 @@
     limitations under the License.
 
 -->
+<!--
+    This tile expects the following properties to be set:
+        project.url
+-->
 <project>
+    <properties>
+        <topSiteURL>${project.url}</topSiteURL>
+    </properties>
     <build>
         <plugins>
             <plugin>

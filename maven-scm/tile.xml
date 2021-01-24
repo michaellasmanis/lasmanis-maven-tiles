@@ -16,6 +16,10 @@
     limitations under the License.
 
 -->
+<!--
+    This tile expects the following properties to be set:
+        project.version
+-->
 <project>
     <build>
         <plugins>
