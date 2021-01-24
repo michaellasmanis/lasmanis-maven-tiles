@@ -18,11 +18,11 @@
 -->
 <!--
     This tile expects the following properties to be set:
-        project.url
+        scmBase.connection
 -->
 <project>
     <properties>
-        <topSiteURL>${project.url}</topSiteURL>
+        <topSiteURL>${scmBase.connection}</topSiteURL>
     </properties>
     <build>
         <plugins>
