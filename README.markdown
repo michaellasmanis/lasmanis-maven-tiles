@@ -2,7 +2,7 @@
 
 | Branch | Status |
 | ------ | ------ |
-|Master|[![Build Status](https://img.shields.io/circleci/project/github/michaellasmanis/lasmanis-maven-tiles/master.svg?style=flat)](https://circleci.com/gh/michaellasmanis/lasmanis-maven-tiles/tree/master) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.lasmanis.maven.tiles/core-set-ossrh/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/com.lasmanis.maven.tiles/core-set-ossrh)|
+|Master|[![Build Status](https://img.shields.io/circleci/project/github/michaellasmanis/lasmanis-maven-tiles/master.svg?style=flat)](https://circleci.com/gh/michaellasmanis/lasmanis-maven-tiles/tree/master) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.lasmanis.maven.tiles/parent/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/com.lasmanis.maven.tiles/parent)|
 
 This project sets up the basic maven infrastructure for projects.
 
