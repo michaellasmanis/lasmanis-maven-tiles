@@ -40,7 +40,6 @@
                         <member>parent</member>
                         <member>properties</member>
                         <member>distributionManagement</member>
-                        <member>dependencyManagement</member>
                         <member>repositories</member>
                         <member>pluginRepositories</member>
                         <member>build</member>
