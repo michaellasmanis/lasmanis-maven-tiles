@@ -40,7 +40,6 @@
                       <rules>
                         <banDuplicatePomDependencyVersions/>
                         <dependencyConvergence/>
-                        <reactorModuleConvergence/>
                         <requireJavaVersion>
                             <version>@java.reqversion@</version>
                         </requireJavaVersion>
