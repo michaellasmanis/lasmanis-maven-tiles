@@ -34,6 +34,11 @@
                         <artifactId>checkstyle-config</artifactId>
                         <version>@mpl-checkstyle.version@</version>
                     </dependency>
+                        <dependency>
+                            <groupId>com.puppycrawl.tools</groupId>
+                            <artifactId>checkstyle</artifactId>
+                            <version>@checkstyle.version@</version>
+                        </dependency>
                 </dependencies>
                 <configuration>
                     <enableRulesSummary>true</enableRulesSummary>
