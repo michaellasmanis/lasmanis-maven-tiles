@@ -115,7 +115,7 @@
         <maven-site.version>3.9.1</maven-site.version>
         <maven-source.version>3.2.1</maven-source.version>
         <maven-surefire.version>3.0.0-M5</maven-surefire.version>
-        <mpl-checkstyle.version>0.0.34</mpl-checkstyle.version>
+        <mpl-checkstyle.version>0.0.37</mpl-checkstyle.version>
         <nexus-staging-maven.version>1.6.8</nexus-staging-maven.version>
         <ossindex-maven-enforcer-rules.version>3.1.0</ossindex-maven-enforcer-rules.version>
         <swagger-maven.version>2.1.6</swagger-maven.version>
