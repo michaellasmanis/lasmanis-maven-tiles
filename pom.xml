@@ -66,6 +66,10 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
 
+        <!-- license info -->
+        <owner.name>Michael Lasmanis</owner.name>
+        <owner.email>michael@lasmanis.com</owner.email>
+
         <!-- project base url -->
         <baseurl>https://github.com/${repository.owner}/${repository.name}</baseurl>
 
@@ -202,14 +206,16 @@
                     <configuration>
                         <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
                         <properties>
-                            <owner>Michael Lasmanis</owner>
-                            <email>michael@lasmanis.com</email>
+                            <owner>${owner.name}</owner>
+                            <email>${owner.email}</email>
                         </properties>
                         <excludes>
-                            <exclude>LICENSE</exclude>
-                            <exclude>nb-licenseheader.txt</exclude>
-                            <exclude>README.markdown</exclude>
+                            <exclude>**/README</exclude>
+                            <exclude>**/README.*</exclude>
+                            <exclude>**/LICENSE</exclude>
                             <exclude>src/site/markdown/*</exclude>
+                            <exclude>src/test/resources/**</exclude>
+                            <exclude>src/main/resources/**</exclude>
                             <exclude>.vagrant/**</exclude>
                             <exclude>.flattened-pom.xml</exclude>
                         </excludes>
