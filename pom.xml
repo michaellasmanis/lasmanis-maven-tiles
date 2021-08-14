@@ -88,32 +88,32 @@
         <scmBase.ciIgnoreSuffix>[skip ci]</scmBase.ciIgnoreSuffix>
 
         <!-- plugins/extensions -->
-        <checkstyle.version>8.40</checkstyle.version>
+        <checkstyle.version>8.45.1</checkstyle.version>
         <clirr-maven.version>2.8</clirr-maven.version>
-        <doxia-module-markdown.version>1.9.1</doxia-module-markdown.version>
+        <doxia-module-markdown.version>1.10</doxia-module-markdown.version>
         <exec-maven.version>3.0.0</exec-maven.version>
         <flatten-maven.version>1.7.20200503171255</flatten-maven.version>
-        <jacoco-maven.version>0.8.6</jacoco-maven.version>
-        <license-maven.version>4.0.rc2</license-maven.version>
+        <jacoco-maven.version>0.8.7</jacoco-maven.version>
+        <license-maven.version>4.1</license-maven.version>
         <maven-antrun.version>3.0.0</maven-antrun.version>
         <maven-assembly.version>3.3.0</maven-assembly.version>
         <maven-changes.version>2.12.1</maven-changes.version>
         <maven-checkstyle.version>3.1.2</maven-checkstyle.version>
         <maven-clean.version>3.1.0</maven-clean.version>
         <maven-compiler.version>3.8.1</maven-compiler.version>
-        <maven-dependency.version>3.1.2</maven-dependency.version>
+        <maven-dependency.version>3.2.0</maven-dependency.version>
         <maven-deploy.version>3.0.0-M1</maven-deploy.version>
         <maven-enforcer.version>3.0.0-M3</maven-enforcer.version>
-        <maven-gpg.version>1.6</maven-gpg.version>
+        <maven-gpg.version>3.0.1</maven-gpg.version>
         <maven-install.version>3.0.0-M1</maven-install.version>
         <maven-jar.version>3.2.0</maven-jar.version>
-        <maven-javadoc.version>3.2.0</maven-javadoc.version>
-        <maven-jxr.version>3.0.0</maven-jxr.version>
+        <maven-javadoc.version>3.3.0</maven-javadoc.version>
+        <maven-jxr.version>3.1.1</maven-jxr.version>
         <maven-pmd.version>3.14.0</maven-pmd.version>
-        <maven-project-info-reports.version>3.1.1</maven-project-info-reports.version>
-        <maven-release.version>3.0.0-M1</maven-release.version>
+        <maven-project-info-reports.version>3.1.2</maven-project-info-reports.version>
+        <maven-release.version>3.0.0-M4</maven-release.version>
         <maven-resources.version>3.2.0</maven-resources.version>
-        <maven-scm.version>1.11.2</maven-scm.version>
+        <maven-scm.version>1.11.3</maven-scm.version>
         <maven-scm-publish.version>3.1.0</maven-scm-publish.version>
         <maven-shade.version>3.2.4</maven-shade.version>
         <maven-site.version>3.9.1</maven-site.version>
@@ -122,9 +122,9 @@
         <mpl-checkstyle.version>0.0.40</mpl-checkstyle.version>
         <nexus-staging-maven.version>1.6.8</nexus-staging-maven.version>
         <ossindex-maven-enforcer-rules.version>3.1.0</ossindex-maven-enforcer-rules.version>
-        <swagger-maven.version>2.1.6</swagger-maven.version>
+        <swagger-maven.version>2.1.10</swagger-maven.version>
         <templating-maven.version>1.0.0</templating-maven.version>
-        <tiles-maven.version>2.19</tiles-maven.version>
+        <tiles-maven.version>2.23</tiles-maven.version>
         <versions-maven.version>2.8.1</versions-maven.version>
     </properties>
 
