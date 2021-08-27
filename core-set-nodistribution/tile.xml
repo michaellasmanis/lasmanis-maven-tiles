@@ -19,7 +19,6 @@
 <!--
     This tile expects the following properties to be set:
         project.name
-        project.inceptionYear
         repository.name
         gpg.keyname
 
@@ -38,7 +37,6 @@
         <tile>@project.groupId@:encoding:@project.version@</tile>
         <tile>@project.groupId@:flatten-maven-ossrh:@project.version@</tile>
         <tile>@project.groupId@:issuemanagement-github:@project.version@</tile>
-        <tile>@project.groupId@:license-maven:@project.version@</tile>
         <tile>@project.groupId@:maven-antrun:@project.version@</tile>
         <tile>@project.groupId@:maven-assembly:@project.version@</tile>
         <tile>@project.groupId@:maven-changes:@project.version@</tile>
