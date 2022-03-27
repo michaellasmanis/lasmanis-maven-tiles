@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<licensePluginReport goal="CHECK" timestamp="1648344392507">
+    <module artifactId="license-maven" groupId="com.lasmanis.maven.tiles" version="0.0.125"/>
+    <files>
+        <file path="pom.xml" result="PRESENT"/>
+        <file path="tile.xml" result="PRESENT"/>
+    </files>
+</licensePluginReport>
