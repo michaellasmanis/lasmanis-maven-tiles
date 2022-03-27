@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<licensePluginReport goal="CHECK" timestamp="1648344391734">
-    <module artifactId="java-set" groupId="com.lasmanis.maven.tiles" version="0.0.125"/>
+<licensePluginReport goal="CHECK" timestamp="1648353440335">
+    <module artifactId="java-set" groupId="com.lasmanis.maven.tiles" version="0.0.128"/>
     <files>
         <file path="pom.xml" result="PRESENT"/>
         <file path="tile.xml" result="PRESENT"/>
