@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<licensePluginReport goal="CHECK" timestamp="1648388151378">
-    <module artifactId="parent" groupId="com.lasmanis.maven.tiles" version="0.0.131"/>
+<licensePluginReport goal="CHECK" timestamp="1651851355354">
+    <module artifactId="parent" groupId="com.lasmanis.maven.tiles" version="0.0.135"/>
     <files>
         <file path="NOTICE" result="PRESENT"/>
         <file path="pom.xml" result="PRESENT"/>
