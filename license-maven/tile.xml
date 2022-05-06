@@ -38,11 +38,13 @@
                         <exclude>**/README</exclude>
                         <exclude>**/README.*</exclude>
                         <exclude>**/LICENSE</exclude>
-                        <exclude>src/site/markdown/*</exclude>
+                        <exclude>src/site/markdown/**</exclude>
                         <exclude>src/test/resources/**</exclude>
                         <exclude>src/main/resources/**</exclude>
                         <exclude>.vagrant/**</exclude>
                         <exclude>.flattened-pom.xml</exclude>
+                        <exclude>dependency-reduced-pom.xml</exclude>
+                        <exclude>.aws-sam/**</exclude>
                     </excludes>
                     <mapping>
                         <markdown>DOUBLESLASH_STYLE</markdown>
@@ -50,6 +52,7 @@
                         <copyright>TEXT</copyright>
                         <bsh>JAVADOC_STYLE</bsh>
                         <Vagrantfile>SCRIPT_STYLE</Vagrantfile>
+                        <toml>SCRIPT_STYLE</toml>
                     </mapping>
                 </configuration>
                 <executions>
