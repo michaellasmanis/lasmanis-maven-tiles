@@ -87,6 +87,9 @@
         <scmBase.sitePublishBranch>gh-pages</scmBase.sitePublishBranch>
         <scmBase.ciIgnoreSuffix>[skip ci]</scmBase.ciIgnoreSuffix>
 
+        <!-- checkstyle supression location -->
+        <mpl-checkstyle.suppression.location>src/checkstyle/suppressions.xml</mpl-checkstyle.suppression.location>
+
         <!-- plugins/extensions -->
         <checkstyle.version>9.3</checkstyle.version>
         <clirr-maven.version>2.8</clirr-maven.version>
