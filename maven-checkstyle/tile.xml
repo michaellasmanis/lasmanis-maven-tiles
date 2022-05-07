@@ -42,6 +42,7 @@
                 </dependencies>
                 <configuration>
                     <enableRulesSummary>true</enableRulesSummary>
+                    <propertyExpansion>org.checkstyle.sun.suppressionfilter.config=@mpl-checkstyle.suppression.location@</propertyExpansion>
                 </configuration>
             </plugin>
         </plugins>
