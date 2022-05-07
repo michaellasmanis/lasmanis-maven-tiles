@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<licensePluginReport goal="CHECK" timestamp="1651851400724">
-    <module artifactId="maven-scm" groupId="com.lasmanis.maven.tiles" version="0.0.135"/>
+<licensePluginReport goal="CHECK" timestamp="1651954952704">
+    <module artifactId="maven-scm" groupId="com.lasmanis.maven.tiles" version="0.0.138"/>
     <files>
         <file path="pom.xml" result="PRESENT"/>
         <file path="tile.xml" result="PRESENT"/>
