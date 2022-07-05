@@ -36,7 +36,6 @@
 <project>
     <tiles>
         <tile>@project.groupId@:clirr-maven:@project.version@</tile>
-        <tile>@project.groupId@:exec-maven:@project.version@</tile>
         <tile>@project.groupId@:jacoco-maven:@project.version@</tile>
         <tile>@project.groupId@:maven-checkstyle:@project.version@</tile>
         <tile>@project.groupId@:maven-compiler:@project.version@</tile>
