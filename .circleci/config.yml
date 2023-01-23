@@ -20,19 +20,11 @@
 #
 version: 2.1
 
-orbs:
-  slack: circleci/slack@4.8.3
-
 jobs:
   build:
     docker:
       # specify the version you desire here
       - image: cimg/openjdk:8.0
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/postgres:9.4
 
     working_directory: ~/repo
 
@@ -79,12 +71,15 @@ jobs:
             git config --global commit.gpgsign 'true'
             git config --global tag.forceSignAnnotated 'true'
 
+      - run:
+          name: Generate cache checksum file
+          command: |
+            find . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed
+            cat .circleci/config.yml .circleci/maven.settings.xml >> /tmp/maven_cache_seed
+
       # Download and cache dependencies
       - restore_cache:
-          keys:
-          - v2-maven-repo-{{ .Branch }}-{{ checksum "pom.xml" }}
-          - v2-maven-repo-{{ .Branch }}
-          - v2-maven-repo-
+          key: maven-{{ checksum "/tmp/maven_cache_seed" }}
 
       - run:
           name: Fetching maven dependencies
@@ -111,8 +106,8 @@ jobs:
 
       - save_cache:
           paths:
-            - ~/.m2
-          key: v2-maven-repo-{{ .Branch }}-{{ checksum "pom.xml" }}
+            - ~/.m2/repository
+          key: maven-{{ checksum "/tmp/maven_cache_seed" }}
 
       - run:
           name: Save test results
@@ -126,14 +121,6 @@ jobs:
 
       - store_artifacts:
           path: ~/junit
-
-      - slack/notify:
-          event: fail
-          template: basic_fail_1
-
-      - slack/notify:
-          event: pass
-          template: success_tagged_deploy_1
 
 workflows:
   build-workflow:
