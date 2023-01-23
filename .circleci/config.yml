@@ -71,12 +71,15 @@ jobs:
             git config --global commit.gpgsign 'true'
             git config --global tag.forceSignAnnotated 'true'
 
+      - run:
+          name: Generate cache checksum file
+          command: |
+            find . -name 'pom.xml' | sort | xargs cat > /tmp/maven_cache_seed
+            cat .circleci/config.yml .circleci/maven.settings.xml >> /tmp/maven_cache_seed
+
       # Download and cache dependencies
       - restore_cache:
-          keys:
-          - v2-maven-repo-{{ .Branch }}-{{ checksum "pom.xml" }}
-          - v2-maven-repo-{{ .Branch }}
-          - v2-maven-repo-
+          key: maven-{{ checksum "/tmp/maven_cache_seed" }}
 
       - run:
           name: Fetching maven dependencies
@@ -103,8 +106,8 @@ jobs:
 
       - save_cache:
           paths:
-            - ~/.m2
-          key: v2-maven-repo-{{ .Branch }}-{{ checksum "pom.xml" }}
+            - ~/.m2/repository
+          key: maven-{{ checksum "/tmp/maven_cache_seed" }}
 
       - run:
           name: Save test results
