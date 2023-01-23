@@ -20,19 +20,11 @@
 #
 version: 2.1
 
-orbs:
-  slack: circleci/slack@4.8.3
-
 jobs:
   build:
     docker:
       # specify the version you desire here
       - image: cimg/openjdk:8.0
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/postgres:9.4
 
     working_directory: ~/repo
 
@@ -126,14 +118,6 @@ jobs:
 
       - store_artifacts:
           path: ~/junit
-
-      - slack/notify:
-          event: fail
-          template: basic_fail_1
-
-      - slack/notify:
-          event: pass
-          template: success_tagged_deploy_1
 
 workflows:
   build-workflow:
